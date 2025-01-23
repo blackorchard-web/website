@@ -1,0 +1,62 @@
+{
+  "Main": {
+    "name": {
+      "type": "Text",
+      "config": {
+        "label": "name"
+      }
+    },
+    "status": {
+      "type": "Select",
+      "config": {
+        "options": [
+          "Ongoing",
+          "Completed",
+          "Forthcoming"
+        ],
+        "label": "status"
+      }
+    },
+    "location": {
+      "type": "Text",
+      "config": {
+        "label": "location"
+      }
+    },
+    "completion": {
+      "type": "Text",
+      "config": {
+        "label": "completion"
+      }
+    },
+    "description": {
+      "type": "StructuredText",
+      "config": {
+        "multi": "paragraph,strong,em,hyperlink,list-item",
+        "label": "description"
+      }
+    },
+    "serial_number": {
+      "type": "Number",
+      "config": {
+        "label": "serial number"
+      }
+    },
+    "pictures": {
+      "type": "Group",
+      "config": {
+        "fields": {
+          "image": {
+            "type": "Image",
+            "config": {
+              "constraint": {},
+              "thumbnails": [],
+              "label": "image"
+            }
+          }
+        },
+        "label": "pictures"
+      }
+    }
+  }
+}
