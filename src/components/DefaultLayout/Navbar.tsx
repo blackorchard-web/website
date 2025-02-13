@@ -35,6 +35,7 @@ const LightNavbar: React.FC = () => {
             <Link activeClassName="active" to="/about-us" className="nav-link">About Us</Link>
             <Link activeClassName="active" to="/our-companies" className="nav-link">Our Companies</Link>
             <Link activeClassName="active" to="/our-projects" className="nav-link">Projects</Link>
+            <Link activeClassName="active" to="/contact-us" className="nav-link">Contact Us</Link>
           </Nav>
         </Navbar.Collapse>
     </Navbar>
