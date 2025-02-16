@@ -165,49 +165,60 @@ By choosing **Black Orchard Facility Management**, you're investing in reliabili
         }
       ]
     },
+    trd: {
+      logo: TRD,
+      name: "**Black Orchard Global Trading**",
+      sections: [
+        {
+          title: "Coming Soon",
+          content: `We're excited to announce that **Black Orchard Global Trading** is preparing to launch. Our trading division will focus on international commerce and strategic partnerships across multiple sectors.`,
+          comingSoon: {
+            features: [
+              "International Trade Solutions",
+              "Supply Chain Management",
+              "Strategic Partnerships",
+              "Global Market Access",
+              "Import/Export Services"
+            ],
+            launchDate: "Soon"
+          }
+        }
+      ]
+    }
   };
 
   return (
     <>
-      <header className="container-fluid bg-default text-white">
+      <header className="container-fluid bg-black text-white py-20">
         <aside className="container">
           <div className="row pt-sm-0 overflow-none">
             <Parallax className="col-12 col-sm-4 rellax mb-3 mb-sm-0 text-center" speed={4}>
-              <img src={Logo} className="w-100 w-xs-90" alt="" />
+              <img src={Logo} className="w-100 w-xs-90 max-w-[300px] mx-auto" alt="Black Orchard Logo" />
             </Parallax>
             <div className="col-12 col-sm-6 mt-sm-auto mb-sm-5 text-center text-sm-left">
-              <h1 className="mb-3 font-weight-bold">
-                <span className="font-weight-light">Our</span>
+              <h1 className="text-5xl md:text-6xl mb-6 font-bold">
+                <span className="font-light">Our</span>
                 <br />
                 Companies
               </h1>
-              <svg viewBox="0 0 100 50" className="d-flex mx-auto ml-sm-1 w-[30px]">
-                <polygon points="0,0 50,50 100,0" fill="#fff" />
-              </svg>
+              <div className="w-24 h-1 bg-white mx-auto ml-sm-0 mb-6"></div>
             </div>
           </div>
         </aside>
       </header>
-      <aside className="p-0 h-[15vh]">
-        <svg viewBox="0 0 100 100" className="absolute top-0 w-full h-full" preserveAspectRatio="none">
-          <polygon points="0,0 0,100 100,0" fill="#000" />
-          <polygon points="0,100 100,0 100,100" fill="#fff" />
-          <path d="M0 100,L100 0" strokeWidth={1} stroke="#999"></path>
-        </svg>
-      </aside>
 
-      <section className="container">
-        <div className="row py-5 justify-content-center z-depth-top">
+      <section className="container py-16">
+        <div className="row justify-content-center">
           <div className="col-12">
             {/* Tabs Navigation */}
-            <div className="flex justify-center space-x-4 mb-8">
+            <div className="flex flex-col md:flex-row justify-center space-y-4 md:space-y-0 md:space-x-6 mb-12">
               {Object.entries(companies).map(([key, company]) => (
                 <button
                   key={key}
                   onClick={() => setActiveTab(key)}
-                  className={`px-6 py-3 rounded-lg transition-all duration-300 ${
+                  className={`px-8 py-4 rounded-lg transition-all duration-300 text-lg font-medium ${
                     activeTab === key 
-                      ? 'bg-black text-white' 
+                      ? 'bg-black text-white shadow-lg transform scale-105' 
                       : 'bg-gray-100 text-gray-600 hover:bg-gray-200'
                   }`}
                 >
@@ -217,52 +228,126 @@ By choosing **Black Orchard Facility Management**, you're investing in reliabili
             </div>
 
             {/* Tab Content */}
-            <div className="max-w-4xl mx-auto">
-              <img 
-                src={companies[activeTab].logo} 
-                alt={companies[activeTab].name} 
-                className="max-w-[300px] mx-auto mb-8"
-              />
-              
-              {companies[activeTab].sections?.map((section, index) => (
-                <div key={index} className="mb-8">
-                  <h2 className="text-2xl font-bold mb-4">{section.title}</h2>
+            <div className="max-w-4xl mx-auto bg-white rounded-xl shadow-xl p-8">
+              {activeTab === 'trd' ? (
+                <div className="text-center py-12">
+                  <img 
+                    src={companies[activeTab].logo} 
+                    alt={companies[activeTab].name} 
+                    className="max-w-[300px] mx-auto mb-12 transform hover:scale-105 transition-duration-300"
+                  />
                   
-                  {section.content && (
-                    <p className="text-gray-700 leading-relaxed mb-4">
-                      {renderBoldText(section.content)}
+                  <div className="relative mb-16">
+                    <h2 className="text-5xl font-bold text-gray-900 mb-6">Coming Soon</h2>
+                    <div className="w-24 h-1 bg-black mx-auto mb-8"></div>
+                    <p className="text-xl text-gray-600 max-w-2xl mx-auto mb-12">
+                      {renderBoldText(companies.trd.sections[0].content)}
                     </p>
-                  )}
+                    
+                    <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
+                      {companies.trd.sections[0].comingSoon.features.map((feature, idx) => (
+                        <div 
+                          key={idx}
+                          className="bg-gray-50 p-6 rounded-lg transform hover:scale-105 transition-duration-300 shadow-sm hover:shadow-md"
+                        >
+                          <div className="w-12 h-12 bg-black rounded-full flex items-center justify-center mx-auto mb-4">
+                            <svg 
+                              className="w-6 h-6 text-white" 
+                              fill="none" 
+                              stroke="currentColor" 
+                              viewBox="0 0 24 24"
+                            >
+                              <path 
+                                strokeLinecap="round" 
+                                strokeLinejoin="round" 
+                                strokeWidth="2" 
+                                d="M5 13l4 4L19 7"
+                              />
+                            </svg>
+                          </div>
+                          <h3 className="text-lg font-semibold text-gray-900">{feature}</h3>
+                        </div>
+                      ))}
+                    </div>
+                    
+                    <div className="bg-black text-white py-8 px-6 rounded-lg max-w-md mx-auto">
+                      <h3 className="text-2xl font-bold mb-4">Launching Soon</h3>
+                      <p className="text-gray-300 mb-6">
+                        Stay tuned for updates on our global trading initiatives
+                      </p>
+                      <button 
+                        className="bg-white text-black px-6 py-3 rounded-lg font-medium hover:bg-gray-100 transition-colors"
+                        onClick={() => {
+                          // Add notification functionality here
+                          alert("Thank you for your interest! We'll notify you when we launch.");
+                        }}
+                      >
+                        Notify Me
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              ) : (
+                <>
+                  <img 
+                    src={companies[activeTab].logo} 
+                    alt={companies[activeTab].name} 
+                    className="max-w-[300px] mx-auto mb-12 transform hover:scale-105 transition-duration-300"
+                  />
                   
-                  {section.subsections?.map((subsection, idx) => (
-                    <div key={idx} className="mb-4">
-                      <h3 className="text-xl font-semibold mb-2">{subsection.subtitle}</h3>
-                      <p className="text-gray-700 leading-relaxed">{subsection.content}</p>
+                  {companies[activeTab].sections?.map((section, index) => (
+                    <div key={index} className="mb-12 last:mb-0">
+                      <h2 className="text-3xl font-bold mb-6 text-gray-900">
+                        {section.title}
+                        <div className="w-16 h-1 bg-black mt-4"></div>
+                      </h2>
+                      
+                      {section.content && (
+                        <p className="text-gray-700 leading-relaxed mb-6 text-lg">
+                          {renderBoldText(section.content)}
+                        </p>
+                      )}
+                      
+                      {section.subsections?.map((subsection, idx) => (
+                        <div key={idx} className="mb-8 bg-gray-50 p-6 rounded-lg">
+                          <h3 className="text-2xl font-semibold mb-4 text-gray-900">{subsection.subtitle}</h3>
+                          <p className="text-gray-700 leading-relaxed">{subsection.content}</p>
+                        </div>
+                      ))}
+                      
+                      {section.projects && (
+                        <ul className="space-y-4">
+                          {section.projects.map((project, idx) => (
+                            <li key={idx} className="bg-gray-50 p-4 rounded-lg hover:shadow-md transition-shadow">
+                              {renderBoldText(project)}
+                            </li>
+                          ))}
+                        </ul>
+                      )}
+                      
+                      {section.partners && (
+                        <ul className="space-y-4">
+                          {section.partners.map((partner, idx) => (
+                            <li key={idx} className="bg-gray-50 p-4 rounded-lg hover:shadow-md transition-shadow">
+                              {renderBoldText(partner)}
+                            </li>
+                          ))}
+                        </ul>
+                      )}
+
+                      {section.bullets && (
+                        <ul className="space-y-4">
+                          {section.bullets.map((bullet, idx) => (
+                            <li key={idx} className="bg-gray-50 p-4 rounded-lg hover:shadow-md transition-shadow">
+                              {renderBoldText(bullet)}
+                            </li>
+                          ))}
+                        </ul>
+                      )}
                     </div>
                   ))}
-                  
-                  {section.projects && (
-                    <ul className="list-disc pl-6 space-y-2">
-                      {section.projects.map((project, idx) => {
-                        const [name, description] = project.split(': ');
-                        return (
-                          <li key={idx} className="text-gray-700">
-                            <strong>{name.replace(/\*\*/g, '')}</strong>: {description}
-                          </li>
-                        );
-                      })}
-                    </ul>
-                  )}
-                  
-                  {section.partners && (
-                    <ul className="list-disc pl-6 space-y-2">
-                      {section.partners.map((partner, idx) => (
-                        <li key={idx} className="text-gray-700">{partner}</li>
-                      ))}
-                    </ul>
-                  )}
-                </div>
-              ))}
+                </>
+              )}
             </div>
           </div>
         </div>
