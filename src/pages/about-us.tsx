@@ -65,7 +65,7 @@ const AboutPage: React.FC<PageProps> = () => {
     {
       image: NASMAN,
       name: "Nasiru Ibrahim",
-      position: "Managing Director",
+      position: "Executive Director/Co Founder",
       bio: `Nasiru Ibrahim is a graduate of Architecture from Ahmadu Bello University, Zaria and a full member of the Nigerian Institute of Architects, and member of the Nigerian Institute of Directors.
 
 He started his career as an architect/project management consultant and gained a wealth of diverse experience for over 20 years while working with Multisystems Consultants Ltd, a 45-year-old consulting firm. As part of his continuing professional development, he went on to acquire an MSc in Project Management at the University of Reading in the United Kingdom while still carrying out his primary duties of managing an array of complex and challenging projects.
@@ -77,7 +77,7 @@ Outside of work, Nasiru is a 3-time marathon finisher and enjoys travelling, gol
     {
       image: MUSTI,
       name: "Mustapha Abdulsalam",
-      position: "Executive Director",
+      position: "Executive Director/Co Founder",
       bio: `Mustapha Abdulsalam is a results-driven executive with extensive experience in the real estate industry. As an Executive Director at Black Orchard Ltd, he plays a pivotal role in shaping the company's strategic vision, driving growth, and optimizing operations. With a deep understanding of real estate markets, trends, and customer needs, Mustapha leads transformative initiatives that strengthen the company's market position and ensure long-term success.
 
 Throughout his career, Mustapha has successfully expanded market presence, identified new investment opportunities, and fostered strategic partnerships that drive profitability. His expertise spans across business development, financial management, and real estate portfolio management, allowing him to oversee large-scale projects that maximize returns on investment.
@@ -103,8 +103,8 @@ Beyond her professional role, Manda has a deep passion for traveling, fashion, r
     },
     {
       image: JOY,
-      name: "JOY ASABE ALI",
-      position: "FACILITY MANAGER",
+      name: "Joy Asabe Ali",
+      position: "Facility Manager",
       bio: `Joy is a highly motivated and detail-oriented Facility Manager with a degree in Estate Management & Valuation from the Federal University of Technology Minna, Niger State. With a strong foundation in estate management, Joy has gained extensive experience in facility management, ensuring seamless day-to-day operations and maintenance within the real estate sector.
 
 As Facility Manager at Black Orchard Limited, Joy has been instrumental in optimizing property maintenance, enhancing operational efficiency, and implementing cost-effective solutions that improve the longevity and value of the company's real estate assets. She has successfully led preventive maintenance, vendor management, and regulatory compliance initiatives, ensuring that all properties under her supervision meet the highest standards of safety, functionality, and aesthetic appeal.
@@ -113,8 +113,8 @@ With a strong problem-solving mindset, Joy has resolved complex facility challen
     },
     {
       image: NASIR,
-      name: "AHMAD NASIR SANI",
-      position: "ARCHITECT",
+      name: "Ahmad Nasir Sani",
+      position: "Architect",
       bio: `Ahmad is an architect by training. He started his professional career at Black Orchard Limited and has risen through the ranks, earning him more responsibilities in project management, site supervisions, professional client presentations and contract management.
 
 He is very creative and highly meticulous. Through his proficiency in the use of several architecture and building information modelling (BIM) software, he has produced many of Black Orchard's unique and well-thought-out designs. He is passionate about his work and the intersection of design with social and environmental justice.
@@ -123,8 +123,8 @@ In his spare time, he pursues his interests in reading about history and culture
     },
     {
       image: ABDUL,
-      name: "ABDULWAHAB AKUVADA",
-      position: "QUANTITY SURVEYOR",
+      name: "Abdulwahab Akuvada",
+      position: "Quantity Surveyor",
       bio: `Abdulwahab Akuvada is an experienced and detail-oriented Quantity Surveyor with over six (6) years of experience in cost planning, contract management and project budgeting for small, medium and large-scale construction projects. He is proficient in construction project cost control, risk management and procurement, passionate about delivering cost efficient and high-quality projects within the time frame.
 
 He is a graduate of Ahmadu Bello University, Zaria – Nigeria and a member of Nigerian Institute of Quantity Surveyors (NIQS). As part of his commitment to professional growth, he is advancing his education with an MSc program in Sustainable Procurement Management at the same citadel of learning while successfully balancing his primary job functions of ensuring construction project meet it objectives.
@@ -133,8 +133,8 @@ He is adept at working with multidisciplinary teams and liaising with stakeholde
     },
     {
       image: HALI,
-      name: "HALEEMAH BAZAR",
-      position: "FRONT DESK OFFICER",
+      name: "Haleemah Bazar",
+      position: "Front Desk Officer",
       bio: `Haleemah Bazar is the Front Desk Officer, where she ensures a welcoming and professional experience for clients, visitors, and stakeholders. With a BSc in Mass Communication, she excels in customer service, office coordination, and administrative support.
 
 In her role, Haleemah efficiently manages appointment scheduling, and client inquiries, ensuring smooth front desk operations. Haleemah is dedicated to maintaining a positive and organized environment, reflecting Black Orchard Limited's commitment to excellence in every interaction.`
