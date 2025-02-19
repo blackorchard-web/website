@@ -112,7 +112,7 @@ As Facility Manager at Black Orchard Limited, Joy has been instrumental in optim
 With a strong problem-solving mindset, Joy has resolved complex facility challenges, improved turnaround times for property maintenance requests, and fostered a proactive approach to facility upkeep, minimizing risks and unexpected breakdowns. Beyond her professional achievements, Joy is also a talented women's corporate wear designer, showcasing her creative flair, attention to detail, and passion for fashion.`
     },
     {
-      image: NASIR,
+      image: ABDUL,
       name: "Ahmad Nasir Sani",
       position: "Architect",
       bio: `Ahmad is an architect by training. He started his professional career at Black Orchard Limited and has risen through the ranks, earning him more responsibilities in project management, site supervisions, professional client presentations and contract management.
@@ -122,7 +122,7 @@ He is very creative and highly meticulous. Through his proficiency in the use of
 In his spare time, he pursues his interests in reading about history and culture, connecting with nature, and immersing in the virtual world of car racing.`
     },
     {
-      image: ABDUL,
+      image: NASIR,
       name: "Abdulwahab Akuvada",
       position: "Quantity Surveyor",
       bio: `Abdulwahab Akuvada is an experienced and detail-oriented Quantity Surveyor with over six (6) years of experience in cost planning, contract management and project budgeting for small, medium and large-scale construction projects. He is proficient in construction project cost control, risk management and procurement, passionate about delivering cost efficient and high-quality projects within the time frame.
