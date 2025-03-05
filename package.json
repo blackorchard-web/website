@@ -35,7 +35,8 @@
     "react": "^18.2.0",
     "react-bootstrap": "^2.8.0",
     "react-dom": "^18.2.0",
-    "react-rellax": "^1.0.3"
+    "react-rellax": "^1.0.3",
+    "react-slick": "^0.30.3"
   },
   "devDependencies": {
     "@types/node": "^18.14.0",

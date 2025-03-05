@@ -1,10 +1,12 @@
-import React, { useCallback } from "react";
+import React, { useCallback, useEffect } from "react";
 import useEmblaCarousel from "embla-carousel-react";
 import carouselImage1 from "../../images/thumbs/3132-1.jpg";
 import carouselImage2 from "../../images/thumbs/IMG_1603.jpeg";
 import carouselImage3 from "../../images/thumbs/IMG_1604.jpeg";
 import carouselImage4 from "../../images/thumbs/IMG_6191.jpeg";
 import carouselImage5 from "../../images/thumbs/IMG_6193.jpeg";
+import carouselImage6 from "../../images/thumbs/building3.jpg";
+import carouselImage7 from "../../images/thumbs/3.jpg";
 
 const MainCarousel: React.FC = () => {
   const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true });
@@ -17,10 +19,25 @@ const MainCarousel: React.FC = () => {
     if (emblaApi) emblaApi.scrollNext();
   }, [emblaApi]);
 
+  useEffect(() => {
+    if (emblaApi) {
+      const autoScrollInterval = setInterval(() => {
+        emblaApi.scrollNext();
+      }, 2000);
+      
+      return () => clearInterval(autoScrollInterval);
+    }
+  }, [emblaApi]);
+
   return (
     <section className="relative w-auto h-auto">
       <div id="boSlide" className="embla relative" ref={emblaRef}>
         <div className="embla__container">
+        <div className="embla__slide">
+            <div
+              className="w-full min-w-full h-[40vh] md:h-[70vh] bg-center bg-cover"
+              style={{ backgroundImage: `url(${carouselImage6})` }}></div>
+          </div>
           <div className="embla__slide">
             <div
               className="w-full min-w-full h-[50vh] md:h-[70vh] bg-center bg-cover"
@@ -30,6 +47,11 @@ const MainCarousel: React.FC = () => {
             <div
               className="w-full min-w-full h-[40vh] md:h-[70vh] bg-center bg-cover"
               style={{ backgroundImage: `url(${carouselImage2})` }}></div>
+          </div>
+          <div className="embla__slide">
+            <div
+              className="w-full min-w-full h-[40vh] md:h-[70vh] bg-center bg-cover"
+              style={{ backgroundImage: `url(${carouselImage7})` }}></div>
           </div>
           <div className="embla__slide">
             <div
