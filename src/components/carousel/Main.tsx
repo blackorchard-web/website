@@ -38,11 +38,11 @@ const MainCarousel: React.FC = () => {
     <section className="relative w-auto h-auto">
       <div id="boSlide" className="embla relative" ref={emblaRef}>
         <div className="embla__container">
-        <div className="embla__slide">
+        {/* <div className="embla__slide">
             <div
               className="w-full min-w-full h-[40vh] md:h-[70vh] bg-center bg-cover"
               style={{ backgroundImage: `url(${carouselImage8})` }}></div>
-          </div>
+          </div> */}
         <div className="embla__slide">
             <div
               className="w-full min-w-full h-[40vh] md:h-[70vh] bg-center bg-cover"
@@ -73,11 +73,11 @@ const MainCarousel: React.FC = () => {
               className="w-full min-w-full h-[40vh] md:h-[70vh] bg-center bg-cover"
               style={{ backgroundImage: `url(${carouselImage7})` }}></div>
           </div>
-          {/* <div className="embla__slide">
+          <div className="embla__slide">
             <div
               className="w-full min-w-full h-[40vh] md:h-[70vh] bg-center bg-cover"
               style={{ backgroundImage: `url(${carouselImage9})` }}></div>
-          </div> */}
+          </div>
           <div className="embla__slide">
             <div
               className="w-full min-w-full h-[40vh] md:h-[70vh] bg-center bg-cover"
