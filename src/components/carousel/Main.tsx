@@ -7,7 +7,7 @@ import carouselImage4 from "../../images/thumbs/IMG_6191.jpeg";
 import carouselImage5 from "../../images/thumbs/IMG_6193-min.jpeg";
 import carouselImage6 from "../../images/thumbs/building3.jpg";
 import carouselImage7 from "../../images/thumbs/3.jpg";
-import carouselImage8 from "../../images/thumbs/1.jpg";
+// import carouselImage8 from "../../images/thumbs/1.jpg";
 import carouselImage9 from "../../images/thumbs/6-min.jpg";
 import carouselImage10 from "../../images/the_island/1-min.jpg";
 import carouselImage11 from "../../images/greencity/1-min.jpg";
@@ -73,11 +73,11 @@ const MainCarousel: React.FC = () => {
               className="w-full min-w-full h-[40vh] md:h-[70vh] bg-center bg-cover"
               style={{ backgroundImage: `url(${carouselImage7})` }}></div>
           </div>
-          <div className="embla__slide">
+          {/* <div className="embla__slide">
             <div
               className="w-full min-w-full h-[40vh] md:h-[70vh] bg-center bg-cover"
               style={{ backgroundImage: `url(${carouselImage9})` }}></div>
-          </div>
+          </div> */}
           <div className="embla__slide">
             <div
               className="w-full min-w-full h-[40vh] md:h-[70vh] bg-center bg-cover"
