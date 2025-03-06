@@ -4,9 +4,14 @@ import carouselImage1 from "../../images/thumbs/3132-1.jpg";
 import carouselImage2 from "../../images/thumbs/IMG_1603.jpeg";
 import carouselImage3 from "../../images/thumbs/IMG_1604.jpeg";
 import carouselImage4 from "../../images/thumbs/IMG_6191.jpeg";
-import carouselImage5 from "../../images/thumbs/IMG_6193.jpeg";
+import carouselImage5 from "../../images/thumbs/IMG_6193-min.jpeg";
 import carouselImage6 from "../../images/thumbs/building3.jpg";
 import carouselImage7 from "../../images/thumbs/3.jpg";
+import carouselImage8 from "../../images/thumbs/1.jpg";
+import carouselImage9 from "../../images/thumbs/6-min.jpg";
+import carouselImage10 from "../../images/the_island/1-min.jpg";
+import carouselImage11 from "../../images/greencity/1-min.jpg";
+
 
 const MainCarousel: React.FC = () => {
   const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true });
@@ -36,6 +41,11 @@ const MainCarousel: React.FC = () => {
         <div className="embla__slide">
             <div
               className="w-full min-w-full h-[40vh] md:h-[70vh] bg-center bg-cover"
+              style={{ backgroundImage: `url(${carouselImage8})` }}></div>
+          </div>
+        <div className="embla__slide">
+            <div
+              className="w-full min-w-full h-[40vh] md:h-[70vh] bg-center bg-cover"
               style={{ backgroundImage: `url(${carouselImage6})` }}></div>
           </div>
           <div className="embla__slide">
@@ -46,12 +56,27 @@ const MainCarousel: React.FC = () => {
           <div className="embla__slide">
             <div
               className="w-full min-w-full h-[40vh] md:h-[70vh] bg-center bg-cover"
+              style={{ backgroundImage: `url(${carouselImage10})` }}></div>
+          </div>
+          <div className="embla__slide">
+            <div
+              className="w-full min-w-full h-[40vh] md:h-[70vh] bg-center bg-cover"
               style={{ backgroundImage: `url(${carouselImage2})` }}></div>
           </div>
           <div className="embla__slide">
             <div
               className="w-full min-w-full h-[40vh] md:h-[70vh] bg-center bg-cover"
+              style={{ backgroundImage: `url(${carouselImage11})` }}></div>
+          </div>
+          <div className="embla__slide">
+            <div
+              className="w-full min-w-full h-[40vh] md:h-[70vh] bg-center bg-cover"
               style={{ backgroundImage: `url(${carouselImage7})` }}></div>
+          </div>
+          <div className="embla__slide">
+            <div
+              className="w-full min-w-full h-[40vh] md:h-[70vh] bg-center bg-cover"
+              style={{ backgroundImage: `url(${carouselImage9})` }}></div>
           </div>
           <div className="embla__slide">
             <div
