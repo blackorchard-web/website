@@ -48,18 +48,13 @@ import tenninetytwoImage6 from "../images/1092/6-min.jpg";
 import tenninetytwoImage7 from "../images/1092/7-min.jpg";
 import tenninetytwoImage8 from "../images/1092/8-min.jpg";
 import tenninetytwoImage9 from "../images/1092/9-min.jpg";
-import tenninetytwoImage10 from "../images/1092/10-min.jpg";
 
-
-
-
-
-
-
-
-
-
-
+import blacklofts from "../images/blackLofts/1.jpg";
+import blacklofts2 from "../images/blackLofts/2.jpg";
+import blacklofts3 from "../images/blackLofts/3.jpg";
+import blacklofts4 from "../images/blackLofts/4.jpg";
+import blacklofts5 from "../images/blackLofts/5.jpg";
+import blacklofts6 from "../images/blackLofts/6.jpg";
 
 
 
@@ -388,8 +383,113 @@ const projects = [
         }
 
       ]
-    }
-  }
+    },
+    
+  },
+  {
+    id: "blacklofts",
+    data: {
+      name: "Black Orchard Lofts",
+      location: "Zaria Kano",
+      status: "Completed",
+      completion: "2024",
+      description: {
+        text: "Studio Apartments"
+      },
+      pictures: [
+        {
+          image: {
+            src: blacklofts,
+            alt: "ThreeOne-ThreeTwo Villas"
+          }
+        },
+        {
+          image: {
+            src: blacklofts2,
+            alt: "ThreeOne-ThreeTwo Villas"
+          }
+        },
+        {
+          image: {
+            src: blacklofts3,
+            alt: "ThreeOne-ThreeTwo Villas"
+          }
+        },
+        {
+          image: {
+            src: blacklofts4,
+            alt: "ThreeOne-ThreeTwo Villas"
+          }
+        },
+        {
+          image: {
+            src: blacklofts5,
+            alt: "ThreeOne-ThreeTwo Villas"
+          }
+        },
+        {
+          image: {
+            src: blacklofts6,
+            alt: "ThreeOne-ThreeTwo Villas"
+          }
+        }
+
+      ]
+    },
+    
+  },
+  {
+    id: "seed",
+    data: {
+      name: "The Seed Apartment",
+      location: "Katampe, Abuja",
+      status: "Completed",
+      completion: "2015",
+      description: {
+        text: "6 № 4 Bedroom Terraces"
+      },
+      pictures: [
+        {
+          image: {
+            src: blacklofts,
+            alt: "ThreeOne-ThreeTwo Villas"
+          }
+        },
+        {
+          image: {
+            src: blacklofts2,
+            alt: "ThreeOne-ThreeTwo Villas"
+          }
+        },
+        {
+          image: {
+            src: blacklofts3,
+            alt: "ThreeOne-ThreeTwo Villas"
+          }
+        },
+        {
+          image: {
+            src: blacklofts4,
+            alt: "ThreeOne-ThreeTwo Villas"
+          }
+        },
+        {
+          image: {
+            src: blacklofts5,
+            alt: "ThreeOne-ThreeTwo Villas"
+          }
+        },
+        {
+          image: {
+            src: blacklofts6,
+            alt: "ThreeOne-ThreeTwo Villas"
+          }
+        }
+
+      ]
+    },
+    
+  },
 ];
 
 const ProjectsPage: React.FC<PageProps> = () => {
