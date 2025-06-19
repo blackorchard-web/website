@@ -56,7 +56,10 @@ import blacklofts4 from "../images/blackLofts/4.jpg";
 import blacklofts5 from "../images/blackLofts/5.jpg";
 import blacklofts6 from "../images/blackLofts/6.jpg";
 
-
+import seedImage1 from "../images/theseed/1.jpg";
+import seedImage2 from "../images/theseed/2.jpg";
+import seedImage3 from "../images/theseed/3.jpg";
+import seedImage4 from "../images/theseed/4.jpg";
 
 
 
@@ -451,41 +454,29 @@ const projects = [
       pictures: [
         {
           image: {
-            src: blacklofts,
+            src: seedImage1,
             alt: "ThreeOne-ThreeTwo Villas"
           }
         },
         {
           image: {
-            src: blacklofts2,
+            src: seedImage2,
             alt: "ThreeOne-ThreeTwo Villas"
           }
         },
         {
           image: {
-            src: blacklofts3,
+            src: seedImage3,
             alt: "ThreeOne-ThreeTwo Villas"
           }
         },
         {
           image: {
-            src: blacklofts4,
+            src: seedImage4,
             alt: "ThreeOne-ThreeTwo Villas"
           }
         },
-        {
-          image: {
-            src: blacklofts5,
-            alt: "ThreeOne-ThreeTwo Villas"
-          }
-        },
-        {
-          image: {
-            src: blacklofts6,
-            alt: "ThreeOne-ThreeTwo Villas"
-          }
-        }
-
+        
       ]
     },
     
